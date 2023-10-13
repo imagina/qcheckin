@@ -3,7 +3,7 @@ const pages = config('pages') // Get Pages from config
 export default [
   {
     title: 'icheckin.cms.sidebar.checkin',
-    icon: 'fas fa-stopwatch',
+    icon: 'fa-light fa-stopwatch',
     children: [
       pages.mainqcheckin.shiftsIndex,
     ]

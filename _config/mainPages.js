@@ -9,7 +9,7 @@ export default {
     page: () => import('@imagina/qcrud/_pages/admin/crudPage'),
     layout: () => import('@imagina/qsite/_layouts/master.vue'),
     title: 'icheckin.cms.sidebar.Shifts',
-    icon: 'fas fa-user-clock',
+    icon: 'fa-light fa-user-clock',
     subHeader: {
       refresh: true
     }
