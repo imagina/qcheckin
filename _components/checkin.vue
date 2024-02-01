@@ -284,7 +284,7 @@ export default {
   }
 }
 </script>
-<style lang="sass">
+<style lang="scss">
 #checkinComponent
   #chronometerContent
     background-color $grey-2
