@@ -285,40 +285,47 @@ export default {
 }
 </script>
 <style lang="scss">
-#checkinComponent
-  #chronometerContent
-    background-color $grey-2
-    position relative
+#checkinComponent {
+  #chronometerContent {
+    background-color: $grey-2;
+    position: relative;
 
-    &:before
-      content ''
-      background-color $grey-2
+    &:before {
+      content: '';
+      background-color: $grey-2;
       width: 115px;
       height: 115px;
-      position absolute
-      top -15px
-      left 0
-      right 0
-      margin auto
-      border-radius 50%
+      position: absolute;
+      top: -15px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 50%;
       z-index: 5000;
+    }
 
-    button
+    button {
       z-index: 5000;
+    }
 
-    #iconButton
-      top 15px
+    #iconButton {
+      top: 15px;
+    }
 
-    #timer
-      font-size 15px
-      padding 20px
+    #timer {
+      font-size: 15px;
+      padding: 20px;
 
-      #screen
-        font-size 33px
+      #screen {
+        font-size: 33px;
+      }
+    }
 
-    #mapChecking
-      height 250px
-      width 100%
-      border none
-
+    #mapChecking {
+      height: 250px;
+      width: 100%;
+      border: none;
+    }
+  }
+}
 </style>
