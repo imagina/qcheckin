@@ -8,7 +8,7 @@
       </div>
       <!-- Close icon -->
       <q-icon name="fas fa-times" color="blue-grey" size="20px" class="cursor-pointer"
-              @click="$eventBus.$emit('toggleMasterDrawer', 'checkin')"/>
+              @click="eventBus.emit('toggleMasterDrawer', 'checkin')"/>
     </div>
     <!--Separator-->
     <q-separator class="q-my-sm"/>
@@ -76,6 +76,7 @@
 </template>
 <script>
 import openMap from '@imagina/qsite/_components/master/mapLeaflet'
+import eventBus from '@imagina/qsite/_plugins/eventBus'
 
 export default {
   beforeDestroy() {
@@ -109,7 +110,8 @@ export default {
       comment: {
         loading: false,
         text: null
-      }
+      },
+      eventBus
     }
   },
   computed: {
