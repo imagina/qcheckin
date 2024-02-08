@@ -80,7 +80,7 @@ import eventBus from '@imagina/qsite/_plugins/eventBus'
 
 export default {
   beforeDestroy() {
-    this.$root.$off('qcheckin.checkout')
+    eventBus.off('qcheckin.checkout')
   },
   props: {},
   components: {openMap},
@@ -142,7 +142,7 @@ export default {
       this.getActiveShift()
       this.getCurrentLocation()
       //Listen checkout
-      this.$root.$on('qcheckin.checkout', (item) => {
+      eventBus.on('qcheckin.checkout', (item) => {
         if (item.id == this.activeShift.id) this.endShift()
       })
     },
