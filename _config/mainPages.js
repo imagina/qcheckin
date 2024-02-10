@@ -5,9 +5,9 @@ export default {
     authenticated: true,
     path: '/checkin/shifts',
     name: 'qcheckin.main.shifts.index',
-    crud: import('@imagina/qcheckin/_crud/shifts'),
-    page: () => import('@imagina/qcrud/_pages/admin/crudPage'),
-    layout: () => import('@imagina/qsite/_layouts/master.vue'),
+    crud: import('modules/qcheckin/_crud/shifts'),
+    page: () => import('modules/qcrud/_pages/admin/crudPage'),
+    layout: () => import('layouts/master.vue'),
     title: 'icheckin.cms.sidebar.Shifts',
     icon: 'fa-light fa-user-clock',
     subHeader: {
