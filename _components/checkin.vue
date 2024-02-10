@@ -75,8 +75,8 @@
   </div>
 </template>
 <script>
-import openMap from '@imagina/qsite/_components/master/mapLeaflet'
-import eventBus from '@imagina/qsite/_plugins/eventBus'
+import openMap from 'modules/qsite/_components/master/mapLeaflet'
+import eventBus from 'modules/qsite/_plugins/eventBus'
 
 export default {
   beforeDestroy() {
