@@ -62,7 +62,7 @@
     <div v-if="activeShift">
       <!--Comment-->
       <div class="q-pa-md">
-        <dynamic-field v-model="comment.text" :field="fields.comments" @input="sendComment"></dynamic-field>
+        <dynamic-field v-model="comment.text" :field="fields.comments" @update:modelValue="sendComment"></dynamic-field>
       </div>
     </div>
     <!--Actions-->
