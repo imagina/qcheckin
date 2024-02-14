@@ -83,6 +83,7 @@ export default {
     eventBus.off('qcheckin.checkout')
   },
   props: {},
+  emits: ['checkin', 'checkout'],
   components: {openMap},
   watch: {},
   mounted() {
