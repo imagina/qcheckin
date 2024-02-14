@@ -76,7 +76,7 @@
 </template>
 <script>
 import openMap from 'modules/qsite/_components/master/mapLeaflet'
-import eventBus from 'modules/qsite/_plugins/eventBus'
+import { eventBus } from 'src/plugins/utils'
 
 export default {
   beforeDestroy() {
