@@ -1,6 +1,6 @@
 <template></template>
 <script>
-//Component
+import { eventBus } from 'src/plugins/utils'
 export default {
   data() {
     return {
@@ -97,8 +97,8 @@ export default {
                 let requestParams = {params: {filter: {checkout: true}}}
                 //Request
                 this.$crud.update('apiRoutes.qcheckin.checkout', item.id, item, requestParams).then(response => {
-                  this.$root.$emit('qcheckin.checkout', item)
-                  this.$root.$emit('crud.data.refresh')
+                  eventBus.emit('qcheckin.checkout', item)
+                  eventBus.emit('crud.data.refresh')
                 }).catch(error => this.loading = false)
               }
             }
