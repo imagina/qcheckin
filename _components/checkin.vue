@@ -79,7 +79,7 @@ import openMap from 'modules/qsite/_components/master/mapLeaflet'
 import { eventBus } from 'src/plugins/utils'
 
 export default {
-  beforeDestroy() {
+  beforeUnmount() {
     eventBus.off('qcheckin.checkout')
   },
   props: {},
